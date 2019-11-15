@@ -1,7 +1,3 @@
-server:
-  port: 9090
-
-
-author:
-  name: jason
-  age: 18
+spring:
+  profiles:
+    active: dev

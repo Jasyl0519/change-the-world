@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+
+author:
+  name: jason
+  age: 18

@@ -18,7 +18,10 @@ public class WelcomeController {
     private AuthorSettings authorSettings;
 
     @RequestMapping("/hello")
-    public String index() {
+    public String index() throws InterruptedException {
+        System.out.println(System.currentTimeMillis() + "Hello start");
+        Thread.sleep(10000);
+        System.out.println(System.currentTimeMillis() + "Hello end");
         return "Hello Spring Boot1 " + authorSettings.getName() + "_" + authorSettings.getAge();
     }
 
