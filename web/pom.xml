@@ -13,4 +13,11 @@
     <version>0.0.1-SNAPSHOT</version>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>io.github.yedaxia</groupId>
+            <artifactId>japidocs</artifactId>
+            <version>1.4</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Response</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Response : NSObject
+
+//状态
+@property (nonatomic, strong) BOOL success;
+//错误码
+@property (nonatomic, assign) NSString code;
+//状态消息
+@property (nonatomic, assign) NSString msg;
+//淘宝/tmall商品或店铺的返利信息;外网B2C商品或活动的返利信息
+@property (nonatomic, strong) UserVo data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface UserVo : NSObject
+
+//主键ID
+@property (nonatomic, assign) NSString id;
+//姓名
+@property (nonatomic, assign) NSString name;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
